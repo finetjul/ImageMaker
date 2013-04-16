@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<executable>
+  <category>Developer Tools</category>
+  <title>Image Maker</title>
+  <description><![CDATA[This module creates an image from scratch. The image can later be edited via the Editor module]]></description>
+  <version>0.0.1</version>
+  <documentation-url>http://www.slicer.org/slicerWiki/index.php/Documentation/4.3/Modules/ImageMaker</documentation-url>
+  <license>Slicer</license>
+  <contributor>Julien Finet (Kitware)</contributor>
+  <acknowledgements>Air Force Research Laboratories</acknowledgements>
+  <parameters>
+    <label>IO</label>
+    <description><![CDATA[Input/output parameters]]></description>
+    <image>
+      <name>OutputVolume</name>
+      <label>Output Volume</label>
+      <channel>output</channel>
+      <index>0</index>
+      <description><![CDATA[Output volume initialized with the given parameters.]]></description>
+    </image>
+  </parameters>
+  <parameters>
+    <label>Data parameters</label>
+    <description><![CDATA[Data type parameters]]></description>
+    <string-enumeration>
+      <name>ScalarType</name>
+      <label>Scalar type</label>
+      <description><![CDATA[Scalar data type for the new output volume.]]></description>
+      <flag>-t</flag>
+      <longflag>--type</longflag>
+      <element>unsigned_char</element>
+      <element>char</element>
+      <element>unsigned_short</element>
+      <element>short</element>
+      <element>unsigned_int</element>
+      <element>int</element>
+      <element>unsigned_long</element>
+      <element>long</element>
+      <element>float</element>
+      <element>double</element>
+      <default>unsigned_char</default>
+    </string-enumeration>
+    <integer>
+      <name>NumberOfComponents</name>
+      <label>Number of components</label>
+      <flag>-n</flag>
+      <longflag>--number_of_components</longflag>
+      <description><![CDATA[Number of components per pixel(e.g. 3 for an RGB image). 1 by default]]></description>
+      <default>1</default>
+    </integer>
+    <double-vector>
+      <name>FillValue</name>
+      <label>Fill value</label>
+      <flag>-f</flag>
+      <longflag>--fill</longflag>
+      <description><![CDATA[Value to fill the image with, 0.00 by default.]]></description>
+      <default>0.00</default>
+    </double-vector>
+  </parameters>
+  <parameters>
+    <label>Spatial parameters</label>
+    <description><![CDATA[Spatial information]]></description>
+    <integer>
+      <name>Dimension</name>
+      <label>Dimension</label>
+      <flag>-d</flag>
+      <longflag>--dimension</longflag>
+      <description><![CDATA[Dimension of the image, typically 2 or 3. 3 by default.]]></description>
+      <default>3</default>
+    </integer>
+    <integer-vector>
+      <name>Size</name>
+      <label>Size</label>
+      <longflag>--size</longflag>
+      <description><![CDATA[Size of the image. [128,128,128] by default.]]></description>
+      <default>128, 128, 128</default>
+    </integer-vector>
+    <double-vector>
+      <name>Origin</name>
+      <label>Origin</label>
+      <flag>-o</flag>
+      <longflag>--origin</longflag>
+      <description><![CDATA[Origin of the image. [0,0,0] by default.]]></description>
+      <default>0.00, 0.00, 0.00</default>
+    </double-vector>
+    <double-vector>
+      <name>Spacing</name>
+      <label>Spacing of the image</label>
+      <flag>-s</flag>
+      <longflag>--spacing</longflag>
+      <description><![CDATA[Spacing of the image, [1,1,1] by default.]]></description>
+      <default>1.00, 1.00, 1.00</default>
+    </double-vector>
+    <double-vector>
+      <name>Direction</name>
+      <label>Direction of the image</label>
+      <flag>-m</flag>
+      <longflag>--direction</longflag>
+      <description><![CDATA[Direction of the image, [1,0,0,0,1,0,0,0,1] by default.]]></description>
+      <default>1.00, 0.00, 0.00, 0.00, 1.00, 0.00, 0.00, 0.00, 1.00</default>
+    </double-vector>
+  
+</parameters>
+</executable>
