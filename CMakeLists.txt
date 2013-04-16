@@ -27,8 +27,8 @@ if(NOT Slicer_SOURCE_DIR)
   set(EXTENSION_CATEGORY "Developer Tools")
   set(EXTENSION_CONTRIBUTORS "Julien Finet (Kitware)")
   set(EXTENSION_DESCRIPTION "This is a collection of modules useful for the Slicer developer")
-  set(EXTENSION_ICONURL "")
-  set(EXTENSION_SCREENSHOTURLS "")
+  set(EXTENSION_ICONURL "http://www.slicer.org/slicerWiki/images/e/e5/QuickToolsLogo.png")
+  set(EXTENSION_SCREENSHOTURLS "http://www.slicer.org/slicerWiki/images/8/81/ImageMaker.png")
 endif()
 
 #-----------------------------------------------------------------------------
