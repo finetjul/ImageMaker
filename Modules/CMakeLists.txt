@@ -1,6 +1,6 @@
 #============================================================================
 #
-# Library: QuickTools
+# Library: ImageMaker
 #
 # Copyright (c) Kitware Inc.
 #

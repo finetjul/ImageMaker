@@ -1,6 +1,6 @@
 #============================================================================
 #
-# Library: QuickTools
+# Library: ImageMaker
 #
 # Copyright (c) Kitware Inc.
 #
@@ -22,11 +22,11 @@ cmake_minimum_required(VERSION 2.8.9)
 
 #-----------------------------------------------------------------------------
 if(NOT Slicer_SOURCE_DIR)
-  set(EXTENSION_NAME QuickTools)
-  set(EXTENSION_HOMEPAGE "http://www.slicer.org/slicerWiki/index.php/Documentation/Nightly/Extensions/QuickTools")
+  set(EXTENSION_NAME ImageMaker)
+  set(EXTENSION_HOMEPAGE "http://www.slicer.org/slicerWiki/index.php/Documentation/Nightly/Extensions/ImageMaker")
   set(EXTENSION_CATEGORY "Developer Tools")
   set(EXTENSION_CONTRIBUTORS "Julien Finet (Kitware)")
-  set(EXTENSION_DESCRIPTION "This is a collection of modules useful for the Slicer developer")
+  set(EXTENSION_DESCRIPTION "This is a CLI module to create an image from scratch.")
   set(EXTENSION_ICONURL "http://www.slicer.org/slicerWiki/images/e/e5/QuickToolsLogo.png")
   set(EXTENSION_SCREENSHOTURLS "http://www.slicer.org/slicerWiki/images/8/81/ImageMaker.png")
 endif()
