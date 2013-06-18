@@ -199,7 +199,7 @@ int DoIt( int argc, char * argv[] )
     {
     pixel[c] = FillValue[c % FillValue.size()];
     }
-  OutputImageType::IndexType firstIndex;
+  typename OutputImageType::IndexType firstIndex;
   for (int i = 0; i < OutputImageType::ImageDimension; ++i)
     {
     firstIndex[i] = 0;
