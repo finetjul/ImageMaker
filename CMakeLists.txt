@@ -23,12 +23,12 @@ cmake_minimum_required(VERSION 2.8.9)
 #-----------------------------------------------------------------------------
 if(NOT Slicer_SOURCE_DIR)
   set(EXTENSION_NAME ImageMaker)
-  set(EXTENSION_HOMEPAGE "http://www.slicer.org/slicerWiki/index.php/Documentation/Nightly/Extensions/ImageMaker")
+  set(EXTENSION_HOMEPAGE "https://www.slicer.org/slicerWiki/index.php/Documentation/Nightly/Extensions/ImageMaker")
   set(EXTENSION_CATEGORY "Developer Tools")
   set(EXTENSION_CONTRIBUTORS "Julien Finet (Kitware)")
   set(EXTENSION_DESCRIPTION "This is a CLI module to create an image from scratch.")
-  set(EXTENSION_ICONURL "http://www.slicer.org/slicerWiki/images/e/e5/QuickToolsLogo.png")
-  set(EXTENSION_SCREENSHOTURLS "http://www.slicer.org/slicerWiki/images/8/81/ImageMaker.png")
+  set(EXTENSION_ICONURL "https://www.slicer.org/slicerWiki/images/e/e5/QuickToolsLogo.png")
+  set(EXTENSION_SCREENSHOTURLS "https://www.slicer.org/slicerWiki/images/8/81/ImageMaker.png")
 endif()
 
 #-----------------------------------------------------------------------------
